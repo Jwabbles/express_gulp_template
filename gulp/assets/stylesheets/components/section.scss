@@ -1,0 +1,21 @@
+.section {
+  padding: 2.5em 0;
+
+  @include responsive-min-width-l {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  @include responsive-min-width-xl {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  &--with-background {
+    background: $primary-shadow;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}

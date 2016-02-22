@@ -1,0 +1,45 @@
+// Breakpoints
+$breakpoints: (
+  s: 480,
+  m: 639,
+  l: 768,
+  xl: 940,
+  xxl: 1179
+);
+
+// Fonts
+$default-body-font: '', sans-serif;
+$default-font-size: 16px;
+$default-font-weight: 300;
+$default-line-height: 1.8;
+
+// Default Values
+$max-width: 1100px;
+$footer-height: 4em;
+
+// Grid
+$grid-column-count: 12;
+$grid-gutter-width: 1%;
+
+// Colours
+$primary-font-color: #313131;
+$secondary-font-color: #fff;
+$tertiary-font-color: #323248;
+
+$primary-background: #fff;
+$primary-shadow: darken($primary-background, 5%);
+
+$secondary-background: #D5DDE3;
+$secondary-shadow: darken($secondary-background, 5%);
+
+$tertiary-background: #323248;
+$tertiary-shadow: darken($tertiary-background, 5%);
+
+$primary-highlight: #C32744;
+$primary-highlight-shadow: darken( $primary-highlight, 5%);
+
+$secondary-highlight: #E45902;
+$secondary-highlight-shadow: darken($secondary-highlight, 5%);
+
+// Social Colours
+$twitter: #55acee;

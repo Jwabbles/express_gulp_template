@@ -1,0 +1,9 @@
+@mixin background {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+
+  @include responsive-min-width-m {
+    background-size: cover;
+  }
+}

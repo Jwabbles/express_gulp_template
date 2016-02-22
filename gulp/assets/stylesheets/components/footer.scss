@@ -1,0 +1,15 @@
+.footer {
+  background: $tertiary-background;
+  padding: 1.5em 0;
+  text-align: center;
+  line-height: 1em;
+  color: lighten($tertiary-font-color, 40%);
+
+  @include responsive-min-width-l {
+    height: $footer-height;
+  }
+
+  p {
+    font-size: 0.75em;
+  }
+}

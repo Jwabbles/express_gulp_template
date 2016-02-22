@@ -1,0 +1,87 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font: $default-font-size $default-body-font;
+  font-size: 80%;
+  font-weight: $default-font-weight;
+  line-height: $default-line-height;
+  position: relative;
+
+  @include responsive-min-width-m {
+    font-size: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $default-body-font;
+  font-weight: 600;
+  line-height: 1.1em;
+  color: $tertiary-font-color;
+  margin: 0 0 0.7em;
+}
+
+h1 {
+  color: $tertiary-font-color;
+  line-height: 1.6em;
+  margin: 0 0 1em;
+  font-size: 1.2em;
+
+  @include responsive-min-width-m {
+    font-size: 2em;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+p {
+  margin: 0 0 1.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: $primary-highlight;
+  text-decoration: none;
+  border-bottom: 0 solid;
+  transition: all 0.15s ease-out;
+
+  &:hover {
+    color: $primary-highlight-shadow;
+  }
+}
+
+ul {
+  margin: 0 0 1.5em;
+  padding: 0 0 0 2em;
+}
+
+li {
+  font-weight: 400;
+  line-height: 2em;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.reduced-size {
+  font-size: 0.85em;
+}

@@ -1,0 +1,66 @@
+.sign-up {
+  text-align: center;
+
+  label {
+    display: inline-block;
+    margin: 0 0 1.5em;
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  .select select {
+    border: 1px solid $primary-background;
+    font-weight: 300;
+    margin: 0 0 1em;
+    max-width: 100%;
+    padding: 1.2em;
+    width: 30em;
+
+    &:focus {
+      border-color: $tertiary-background;
+      outline: none;
+    }
+  }
+
+.select {
+
+  select {
+    -webkit-appearance: none;
+    background: $primary-background url('../images/arrow.png') no-repeat 96% 50%;
+    background-size: 1.4em;
+    border-radius: 0;
+  }
+}
+
+  input[type="submit"] {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 0.2em solid;
+    color: $tertiary-font-color;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 1.8em 4.2em;
+    text-transform: uppercase;
+    transition: 0.25s all ease;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background: $primary-highlight;
+      color: $secondary-font-color;
+      border-color: $primary-highlight;
+    }
+  }
+
+  &__response {
+    background: $secondary-highlight;
+    color: $secondary-font-color;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+}

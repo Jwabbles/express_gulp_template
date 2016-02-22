@@ -1,0 +1,59 @@
+@mixin responsive-min-width-s {
+  @media (min-width: #{map-get($breakpoints, s) + 1}px) {
+    @content;
+  }
+}
+
+@mixin responsive-min-width-m {
+  @media (min-width: #{map-get($breakpoints, m) + 1}px) {
+    @content;
+  }
+}
+
+@mixin responsive-min-width-l {
+  @media (min-width: #{map-get($breakpoints, l) + 1}px) {
+    @content;
+  }
+}
+
+@mixin responsive-min-width-xl {
+  @media (min-width: #{map-get($breakpoints, xl) + 1}px) {
+    @content;
+  }
+}
+
+@mixin responsive-min-width-xxl {
+  @media (min-width: #{map-get($breakpoints, xxl) + 1}px) {
+    @content;
+  }
+}
+
+@mixin responsive-max-width-s {
+  @media (max-width: #{map-get($breakpoints, s)}px) {
+    @content;
+  }
+}
+
+@mixin responsive-max-width-m {
+  @media (max-width: #{map-get($breakpoints, m)}px) {
+    @content;
+  }
+}
+
+@mixin responsive-max-width-l {
+  @media (max-width: #{map-get($breakpoints, l)}px) {
+    @content;
+  }
+}
+
+@mixin responsive-max-width-xl {
+  @media (max-width: #{map-get($breakpoints, xl)}px) {
+    @content;
+  }
+}
+
+@mixin responsive-max-width-xxl {
+  @media (max-width: #{map-get($breakpoints, xxl)}px) {
+    @content;
+  }
+}

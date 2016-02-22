@@ -1,0 +1,21 @@
+.header {
+  align-items: center;
+  background: $primary-shadow;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+
+  @include responsive-min-width-l {
+    min-height: 75vh;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto 2em;
+    max-width: 4.5em;
+
+    @include responsive-min-width-l {
+      margin-bottom: 6vh;
+    }
+  }
+}

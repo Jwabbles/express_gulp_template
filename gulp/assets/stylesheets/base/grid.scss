@@ -1,0 +1,45 @@
+.container {
+  @include clearfix;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 0 1.25em;
+  width: 100%;
+
+  &--centered {
+    font-size: 1.4em;
+    text-align: center;
+  }
+}
+
+.row {
+  @include clearfix;
+  margin-left: -$grid-gutter-width;
+  margin-right: -$grid-gutter-width;
+
+  @include responsive-min-width-m {
+    display: flex;
+    align-items: center;
+
+    &--top {
+      align-items: flex-start;
+    }
+  }
+}
+
+@for $i from 1 through $grid-column-count {
+  .column-#{$i} {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+    position: relative;
+    width: 100%;
+
+    @include responsive-min-width-m {
+      width: 100% / $grid-column-count * $i;
+    }
+  }
+
+  .column-#{$i},
+  .column-#{$i} * {
+    box-sizing: border-box;
+  }
+}
