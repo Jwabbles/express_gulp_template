@@ -1,15 +1,15 @@
-# Recruitment fair application form.
+# Express App Template with Gulp.
 
-JS application for the recruitment fair.
+A base template to use when starting new express templates.
 
 ### Setup
 
 **Make sure you have Gulp installed** `npm install --global gulp`
 
 ```
-Mkdir -p ~/recruitment_fair
-$ git@github.otbeach.com:james-walsh/recruitment_fair.git
-$ cd ~/recruitment_fair
+Mkdir -p ~/express_gulp_template
+$ git clone https://github.com/Jwabbles/express_gulp_template.git
+$ cd ~/express_gulp_template
 $ npm install
 ```
 
