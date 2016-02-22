@@ -24,4 +24,3 @@ After a few seconds this will open the application in your default browser and e
 ## Assets
 
 These are stored in `gulp/assets` and then complied on save to `public/assets`. Please edit the assets in the **gulp** folder.
-# express_gulp_template
