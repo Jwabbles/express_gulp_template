@@ -19,7 +19,7 @@ $ npm install
 nf start
 ```
 
-After a few seconds this will open the application in your default browser and enable live reload. To change you default browser `add browser: 'google chrome'`, under `browserSync` inside `gulp/config.js`
+After a few seconds this will open the application in your default browser and enable live reload. To change your default browser `add browser: 'google chrome'`, under `browserSync` inside `gulp/config.js`
 
 ## Assets
 
